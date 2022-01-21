@@ -1,0 +1,71 @@
+:root {
+  --primary-color: #9356DC;
+  --secondary-color: #ff79da;
+  --tertiary-color: #99E2D0;
+  --cpr-1: #955ddade;
+  --cpr-2: rgba(98, 39, 170, 0.8705882353);
+  --cpr-3: rgba(74, 29, 129, 0.8705882353);
+  --cpr-4: rgba(50, 20, 87, 0.8705882353);
+  --cpr-5: rgba(26, 10, 46, 0.8705882353);
+  --cpr-6: rgba(203, 176, 237, 0.8705882353);
+  --dark-0: black;
+  --dark-1: #1a1a1a;
+  --dark-2: #333333;
+  --dark-3: #4d4d4d;
+  --dark-4: #666666;
+  --dark-5: gray;
+  --dark-6: #999999;
+  --dark-7: #b3b3b3;
+  --dark-8: #cccccc;
+  --dark-9: #e6e6e6;
+  --dark-10: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+header .explorer {
+  height: 400px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+header .explorer .header_logo {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 10px;
+}
+header .explorer .header_logo img {
+  margin-top: 20px;
+  height: 22px;
+  width: 160px;
+}
+header .information {
+  background-color: #eaeaea;
+  padding: 20px;
+}
+header .information .icone_map {
+  padding: 10px;
+}
+header button {
+  background-image: linear-gradient(#da6ddb, #b963dc, #a35bdb, #a75cdb);
+  width: 217px;
+  height: 47px;
+  border-radius: 60px;
+  color: var(--dark-10);
+  font-size: 13px;
+  border: none;
+  box-shadow: 3px 1px 16px 3px;
+}
+
+main {
+  text-align: center;
+  background-color: #70cf44;
+}
+
+/*# sourceMappingURL=style.css.map */
