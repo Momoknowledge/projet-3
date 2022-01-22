@@ -1,26 +1,45 @@
-.resultats {
-    & ol {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
+.location {
+    background-color: $background-color-2;
+    padding: 45px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        @media (max-width:760px) {
-            flex-direction: column;
-        }
+    .icone_map {
+        padding: 10px;
+    }
 
-        & li {
-            background-color: $color-dr;
-            padding: 1rem 2rem;
-            flex-grow: 1;
-            border: 1px solid blue;
-            border-radius: 1rem;
-            @include base_shadow;
+}
 
-            &:hover {
-                @include lens
-            }
+.explorer {
+    text-align: center;
+    background-color: $background-color-1;
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    button {
+        background: $button-gradient;
+        width: 217px;
+        height: 47px;
+        border-radius: 60px;
+        color: white;
+        font-size: 16px;
+        border: none;
+        @include base_shadow;
+        transition: 200ms;
+
+        &:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
         }
     }
+}
+
+.resultats {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 

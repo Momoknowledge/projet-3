@@ -1,48 +1,15 @@
 header {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .explorer {
-        height: 600px;
-        text-align: center;
-        background-color: #f6f6f6;
+    img {
+        margin-top: 20px;
+        height: 30px;
+        width: 160px;
 
-        .header_logo {
-            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-            position: relative;
-            padding: 60px;
-
-            img {
-                margin-top: 20px;
-                height: 30px;
-                width: 160px;
-
-            }
-        }
     }
-
-    .information {
-        background-color: $color-dr;
-        padding: 45px;
-        font-size: 1.3rem;
-
-        .icone_map {
-            padding: 10px;
-        }
-    }
-}
-
-.explorer button {
-    background-image: $button-color;
-    width: 217px;
-    height: 47px;
-    border-radius: 60px;
-    color: var(--dark-10);
-    font-size: 16px;
-    border: none;
-    @include base_shadow;
-    transition: 200ms;
-}
-
-.explorer button:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
 }
