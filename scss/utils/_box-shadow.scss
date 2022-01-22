@@ -1,0 +1,11 @@
+@mixin base_shadow($color: $base-Shadow-color) {
+    box-shadow: 2px 3px 11px 0px $color;
+}
+
+@mixin light_shadow($amount: 0%, $color: $base-Shadow-color) {
+    @include base_shadow(lighten($color, $amount));
+}
+
+@mixin dark_shadow($amount: 0%, $color: $base-Shadow-color) {
+    @include base_shadow(darken($color, $amount));
+}
