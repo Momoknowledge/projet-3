@@ -3,6 +3,9 @@ $secondary-color: #ff79da;
 $tertiary-color: #99E2D0;
 $button-gradient: linear-gradient($secondary-color, $primary-color);
 
+
+$primary-alpha-color: rgba($primary-color, .2);
+
 $base-Shadow-color: rgba(0, 0, 0, 0.69);
 
 $background-color-0: #fff;
