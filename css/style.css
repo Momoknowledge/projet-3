@@ -70,8 +70,7 @@ header img {
 }
 .explorer button {
   background: linear-gradient(#ff79da, #9356DC);
-  width: 217px;
-  height: 47px;
+  padding: 16px 32px;
   border-radius: 60px;
   color: white;
   font-size: 16px;
@@ -133,6 +132,14 @@ header img {
   color: #9356DC;
 }
 
+@media (min-width: 732px) {
+  .fonctionnement_wrapper .resultats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+}
 .restaurant_wrapper {
   background-color: #f6f6f6;
   padding: 50px 0;
@@ -143,27 +150,35 @@ header img {
   align-items: center;
   flex-direction: column;
   padding: 0 25px;
+  gap: 20px;
 }
 .restaurant_wrapper .restaurant_card .card_wrapper {
-  width: auto;
-  margin: 10px;
+  width: 320px;
   box-shadow: 2px 3px 11px 0px rgba(0, 0, 0, 0.69);
   border-radius: 20px;
   overflow: hidden;
 }
-.restaurant_wrapper .restaurant_card .card_wrapper .vignette_card > img {
+.restaurant_wrapper .restaurant_card .card_wrapper .vignette_card {
+  position: relative;
+  padding-top: 75%;
+}
+.restaurant_wrapper .restaurant_card .card_wrapper .vignette_card img {
+  top: 0;
+  left: 0;
+  position: absolute;
   object-fit: cover;
   display: block;
+  width: 100%;
+  height: 100%;
 }
-.restaurant_wrapper .restaurant_card .card_wrapper .new {
-  position: relative;
-}
-.restaurant_wrapper .restaurant_card .card_wrapper .new::before {
-  content: "nouveau";
+.restaurant_wrapper .restaurant_card .card_wrapper .vignette_card.new::after {
+  content: "Nouveau";
   position: absolute;
   height: 32px;
   width: 80px;
   background-color: #99E2D0;
+  color: #278870;
+  font-weight: 600;
   display: grid;
   place-content: center;
   right: 16px;
@@ -198,6 +213,22 @@ header img {
   background-clip: text;
 }
 
+@media (min-width: 376px) {
+  .restaurant_wrapper {
+    padding: 50px 0;
+  }
+  .restaurant_wrapper .restaurant_card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .restaurant_wrapper .card_wrapper {
+    width: auto;
+    min-width: 250px;
+    max-width: 659px;
+    flex: 1 1 250px;
+  }
+}
 footer {
   background-color: #353535;
   color: #fff;
@@ -214,8 +245,11 @@ footer .footer_wrapper h3 {
   font-family: "shrikhand", sans-serif;
   padding: 16px 0 16px 0;
 }
-footer .footer_wrapper .footer_icon {
-  padding: 5px;
+footer .footer_wrapper i {
+  padding-right: 15px;
+}
+footer .footer_wrapper i.small {
+  font-size: 0.65em;
 }
 
 /*# sourceMappingURL=style.css.map */

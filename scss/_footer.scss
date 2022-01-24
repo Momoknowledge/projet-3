@@ -15,8 +15,13 @@ footer {
             padding: 16px 0 16px 0;
         }
 
-        .footer_icon {
-            padding: 5px;
+
+        i {
+            padding-right: 15px;
+
+            &.small {
+                font-size: .65em;
+            }
         }
     }
 }
