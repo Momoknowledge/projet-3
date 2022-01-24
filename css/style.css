@@ -34,7 +34,14 @@ h3 {
   margin: 0;
 }
 
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
 header {
+  max-width: 1400px;
+  margin: auto;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   position: relative;
   padding: 0 0 10px;
@@ -232,7 +239,7 @@ header img {
 footer {
   background-color: #353535;
   color: #fff;
-  max-width: 100%;
+  max-width: 1400px;
   margin: auto;
 }
 footer .footer_wrapper {

@@ -35,3 +35,8 @@ a {
 h3 {
     margin: 0;
 }
+
+main {
+    max-width: $max-width;
+    margin: auto;
+}
