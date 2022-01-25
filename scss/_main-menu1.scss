@@ -1,0 +1,56 @@
+$max-widh2:1400px;
+
+.img_menu1 img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 60vh;
+    margin: auto;
+    object-position: center bottom;
+
+}
+
+.menu1 {
+    max-width: $max-widh2;
+    margin: auto;
+
+    .vignette_content1 {
+        h2 {
+            font-family: "shrikhand", sans-serif;
+
+        }
+
+        position: relative;
+        margin-top: -40px;
+        background-color:$background-color-0;
+        flex-direction: column;
+        padding-left: 16px;
+        text-align: initial;
+        padding: 10px;
+        line-height: 27px;
+        max-width: $max-widh2;
+        border-radius: 32px 32px 0 0;
+
+        .icon_heart1 {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            i {
+                font-size: 1.9em;
+                color: black;
+                font-weight: 400;
+
+                &:hover {
+                    font-weight: 900;
+                    background-image: $button-gradient;
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+
+                }
+            }
+        }
+    }
+}

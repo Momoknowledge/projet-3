@@ -2,11 +2,10 @@ footer {
 
     background-color: $background-color-3;
     color: $background-color-0;
-    max-width: $max-width;
-    ;
-    margin: auto;
 
     .footer_wrapper {
+        margin: auto;
+        max-width: $max-width;
         display: flex;
         flex-direction: column;
         gap: 8px;
