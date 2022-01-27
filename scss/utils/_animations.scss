@@ -1,14 +1,23 @@
 @keyframes apparition {
     from {
         opacity: 0;
-        transform: translateY(100%);
+        transform: translateY(200%);
+        @include base_shadow(transparent);
+    }
+
+    40% {
+        @include base_shadow(transparent);
     }
 
     70% {
         opacity: 1;
     }
 
-    to {
+    85% {
         transform: translateY(0);
+    }
+
+    to {
+        @include base_shadow;
     }
 }

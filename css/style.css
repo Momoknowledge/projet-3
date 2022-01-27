@@ -1,13 +1,20 @@
 @keyframes apparition {
   from {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(200%);
+    box-shadow: 0px 0px 9px 0px transparent;
+  }
+  40% {
+    box-shadow: 0px 0px 9px 0px transparent;
   }
   70% {
     opacity: 1;
   }
-  to {
+  85% {
     transform: translateY(0);
+  }
+  to {
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.69);
   }
 }
 * {
@@ -59,6 +66,22 @@ header img {
   margin-top: 20px;
   height: 30px;
   width: 160px;
+}
+
+#menu-restau header::before {
+  position: absolute;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  left: 0;
+  content: "\f060";
+  top: 40%;
+  left: 5%;
+  font-size: 20px;
 }
 
 footer {
@@ -348,9 +371,9 @@ footer .footer_wrapper i.small {
   flex-direction: column;
   position: relative;
   gap: 20px;
-  animation: apparition 0.7s ease;
 }
 .main-menu .menu-items-list .vignette_wrapper {
+  animation: apparition 1.3s ease;
   display: flex;
   border-radius: 20px;
   overflow: hidden;
@@ -394,11 +417,7 @@ footer .footer_wrapper i.small {
   flex-direction: row;
   justify-content: space-between;
 }
-.main-menu .menu-items-list h4 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+.main-menu .menu-items-list h4,
 .main-menu .menu-items-list .text {
   overflow: hidden;
   white-space: nowrap;

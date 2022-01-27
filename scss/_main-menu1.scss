@@ -85,9 +85,9 @@ $max-widh2:1400px;
         flex-direction: column;
         position: relative;
         gap: 20px;
-        animation: apparition .7s ease;
 
         .vignette_wrapper {
+            animation: apparition 1.3s ease;
             display: flex;
             border-radius: 20px;
             overflow: hidden;
@@ -141,12 +141,7 @@ $max-widh2:1400px;
 
         }
 
-        h4 {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-
+        h4,
         .text {
             overflow: hidden;
             white-space: nowrap;

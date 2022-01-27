@@ -14,3 +14,13 @@ header {
 
     }
 }
+
+#menu-restau {
+    header::before {
+        @include font-awsome;
+        content: "\f060";
+        top: 40%;
+        left: 5%;
+        font-size: 20px;
+    }
+}

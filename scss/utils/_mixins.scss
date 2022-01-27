@@ -9,3 +9,15 @@
 @mixin dark_shadow($amount: 0%, $color: $base-Shadow-color) {
     @include base_shadow(darken($color, $amount));
 }
+
+@mixin font-awsome {
+    position: absolute;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    left: 0;
+}
