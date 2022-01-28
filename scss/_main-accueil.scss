@@ -97,8 +97,7 @@
             }
 
 
-            //&:hover,
-            &.rose {
+            &:hover {
                 @include lens;
                 background-color: $primary-alpha-color;
 
