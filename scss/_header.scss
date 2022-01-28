@@ -13,10 +13,8 @@ header {
         width: 160px;
 
     }
-}
 
-#menu-restau {
-    header::before {
+    .back-button {
         @include font-awsome;
         content: "\f060";
         top: 40%;

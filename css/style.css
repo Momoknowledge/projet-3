@@ -123,8 +123,7 @@ header img {
   height: 30px;
   width: 160px;
 }
-
-#menu-restau header::before {
+header .back-button {
   position: absolute;
   display: inline-block;
   font-style: normal;
@@ -483,72 +482,12 @@ footer .footer_wrapper i.small {
   font-weight: 600;
 }
 
-.vignette_wrapper_menu {
-  animation: apparition 1.3s ease;
-  display: flex;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.69);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  margin: 20px 0 0 0;
-}
-.vignette_wrapper_menu .icon_check {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  justify-content: center;
-  background-color: #99E2D0;
-  color: #fff;
-  margin-right: -56px;
-  width: 56px;
-  transition: all 0.5s ease;
-}
-.vignette_wrapper_menu .icon_check i {
-  font-size: 1.5em;
-  transform: rotate(-270deg);
-  transition: all 0.8s ease;
-}
-.vignette_wrapper_menu:hover .icon_check {
-  margin-right: 0;
-}
-.vignette_wrapper_menu:hover .icon_check i {
-  transform: rotate(0);
-}
-
-.vignette-content {
-  flex-grow: 1;
-  padding: 20px;
-  background-color: #fff;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.vignette-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-h4,
-.text {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.price {
-  font-weight: 600;
-}
-
-section.commander {
+.commander {
   padding-top: 30px;
   padding-bottom: 60px;
   text-align: center;
 }
-section.commander button {
+.commander button {
   background: linear-gradient(#ff79da, #9356DC);
   padding: 16px 32px;
   border-radius: 60px;
@@ -559,7 +498,7 @@ section.commander button {
   transition: 200ms;
   cursor: pointer;
 }
-section.commander button:hover {
+.commander button:hover {
   transform: scale(1.02);
   opacity: 0.9;
 }
